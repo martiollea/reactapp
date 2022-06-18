@@ -15,13 +15,12 @@ function Comic({ item }) {
   if (item.length === 0) {
     return <NoResults />;
   }
-  //title, image, year, short description, price
-  //title, image, year, description, price, characters, authors
+
   return (
     <div
       className="comic"
       onClick={() => {
-        navigate(`/Comic/${item.title}`);
+        navigate(`/Comic/${item.id}`);
       }}
     >
       <img
@@ -49,7 +48,11 @@ export default function SearchScreen() {
   };
 
   const MapItems = () => {
-    return data.map((item) => <Comic item={item} />);
+    return data.map((item) => (
+      <div key={item.id}>
+        <Comic item={item} />
+      </div>
+    ));
   };
 
   useEffect(() => {

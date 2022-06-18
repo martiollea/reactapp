@@ -1,0 +1,105 @@
+.details-screen {
+  position: relative;
+  min-height: 100vh;
+  color: #111;
+  font-family: Roboto, sans-serif;
+  background-color: #eff;
+}
+.details-screen .wrapper {
+  padding-top: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color:#eff;
+}
+.details-screen .poster {
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.209);
+}
+.details-screen .header {
+  width: 60em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+.details-screen .header .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.details-screen .title {
+  margin: 0;
+  font-size: 40pt;
+  line-height: 42pt;
+  font-weight: bold;
+  color: #111;
+}
+
+.details-screen .subtitle {
+  color: #333;
+  margin-top: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 18pt;
+}
+.details-screen .year {
+  font-weight: bold;
+}
+.details-screen .header .subtitle .price {
+  color: #333;
+}
+.details-screen .header .space {
+  width: 3rem;
+}
+.details-screen .header .flex-space {
+  flex: 1;
+}
+.details-screen .header .genres span {
+  background-color: rgb(89, 186, 255);
+  color: black;
+  font-weight: bold;
+  padding: 0.2em 0.6em;
+  border-radius: 1em;
+  font-size: 11pt;
+  margin-left: 0.4rem;
+}
+.details-screen .header .description {
+  margin-top: 1.8rem;
+  line-height: 18pt;
+  color: #222;
+}
+.movie-details-screen .actor-list {
+  width: 60em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+.details-screen .actor-list .card {
+  font-size: 10pt;
+  width: 7.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: .3rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.details-screen .actor-list .card .profile {
+  width: 100%;
+}
+.details-screen .actor-list .card .name {
+  font-size: 105%;
+  font-weight: bold;
+  padding: .2rem .5rem;
+}
+.details-screen .actor-list .card .role {
+  color: #aaa;
+  font-size: 95%;
+  padding: 0 .5rem .2rem;
+}
