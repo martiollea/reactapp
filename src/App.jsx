@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SearchScreen from "./screens/SearchScreen";
 import "./App.css";
-import { Outlet } from "react-router-dom";
 
-function App() {
-  const [search, setSearch] = useState < string > "";
-
-  return <Outlet context={[search, setSearch]} />;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SearchScreen></SearchScreen>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App;
