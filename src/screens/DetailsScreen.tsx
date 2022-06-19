@@ -24,8 +24,6 @@ export default function DetailsScreen() {
     return <Loading />;
   }
   
-  //title, image, year, description, price, characters, authors
-
   return (
     <div className="details-screen" >
       <div className="wrapper">
